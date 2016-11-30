@@ -108,7 +108,7 @@ def add_opportunity(nickname):
 		if nickname == user.nickname():
 			return render_template('add_opportunity.html', nickname=nickname, login_logout_url=login_logout_url)
 		else:
-			flash('You cannot enter an opportunity for another user.')
+			#flash('You cannot enter an opportunity for another user.')
 			return redirect(url_for('user_summary_page', nickname=nickname))
 	else:
 		login_logout_url = users.create_login_url('/')
