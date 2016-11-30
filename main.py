@@ -5,7 +5,6 @@ import datetime
 
 # Google Modules
 from google.appengine.api import users
-from google.appengine.ext import ndb
 
 # personal moduls
 from adams_module import *
